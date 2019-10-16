@@ -1,0 +1,16 @@
+<ul>
+  <li>Name: <%= @dog.name %></li>
+  <li>Breed: <%= @dog.breed %></li>
+  <li>Age: <%= @dog.age %></li>
+  <h2>Owners:</h2>
+  <ul>
+    <% if @dog.employees.any? %>
+      <% @dog.employees.each do |employee| %>
+        <li><%= link_to employee.full_name, employee %></li>
+      <% end %>
+    <% else %>
+      <li>None. You could be the first!</li>
+    <% end %>
+  </ul>
+</ul>
+<p><%= link_to "back to index of all dogs", dogs_path %></p>

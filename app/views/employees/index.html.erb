@@ -1,0 +1,7 @@
+<h1>Employees</h1>
+<ul>
+  <% Employee.all.each do |employee| %>
+    <li><%= link_to employee.full_name, employee %></li>
+  <% end %>
+</ul>
+<p><%= link_to "New", new_employee_path %></p>
