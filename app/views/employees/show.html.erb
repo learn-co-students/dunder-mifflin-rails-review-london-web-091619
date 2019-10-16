@@ -1,0 +1,7 @@
+<h1><%=@employee.full_name%><h1>
+<h1><%=@employee.alias%><h1>
+<h1><%=@employee.title%><h1>
+<h1><%=@employee.office%><h1>
+<img src=<%=@employee.img_url%>>
+<h1><%=link_to @employee.dog_name, dog_path(@employee.dog)%><h1>
+<%=link_to "Edit", edit_employee_path(@employee)%>
