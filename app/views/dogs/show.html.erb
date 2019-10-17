@@ -1,0 +1,7 @@
+<%=@dog.name%>
+<%=@dog.breed%><br>
+<%=@dog.age%><br>
+<%@dog.employees.each do|employee|%><br>
+<%=link_to employee.full_name, employee_path(employee)%><br>
+<%end%>
+
